@@ -14,6 +14,9 @@
 		AB189F8424665B8400E99680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB189F8324665B8400E99680 /* Assets.xcassets */; };
 		AB189F8724665B8400E99680 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB189F8624665B8400E99680 /* Preview Assets.xcassets */; };
 		AB189F8A24665B8400E99680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB189F8824665B8400E99680 /* LaunchScreen.storyboard */; };
+		AB189F9224665C8E00E99680 /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB189F9124665C8E00E99680 /* IconImage.swift */; };
+		AB189F9424665D2100E99680 /* WateringDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB189F9324665D2100E99680 /* WateringDetail.swift */; };
+		AB189F9624665D4900E99680 /* WateringForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB189F9524665D4900E99680 /* WateringForm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		AB189F8624665B8400E99680 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AB189F8924665B8400E99680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB189F8B24665B8400E99680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB189F9124665C8E00E99680 /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
+		AB189F9324665D2100E99680 /* WateringDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WateringDetail.swift; sourceTree = "<group>"; };
+		AB189F9524665D4900E99680 /* WateringForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WateringForm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,17 @@
 		AB189F7924665B7F00E99680 /* watering_notification */ = {
 			isa = PBXGroup;
 			children = (
+				AB189F8B24665B8400E99680 /* Info.plist */,
 				AB189F7A24665B7F00E99680 /* AppDelegate.swift */,
-				AB189F7C24665B7F00E99680 /* SceneDelegate.swift */,
 				AB189F8124665B7F00E99680 /* ContentView.swift */,
+				AB189F9124665C8E00E99680 /* IconImage.swift */,
+				AB189F7C24665B7F00E99680 /* SceneDelegate.swift */,
+				AB189F9324665D2100E99680 /* WateringDetail.swift */,
+				AB189F9524665D4900E99680 /* WateringForm.swift */,
 				AB189F8324665B8400E99680 /* Assets.xcassets */,
 				AB189F8824665B8400E99680 /* LaunchScreen.storyboard */,
-				AB189F8B24665B8400E99680 /* Info.plist */,
-				AB189F7E24665B7F00E99680 /* watering_notification.xcdatamodeld */,
 				AB189F8524665B8400E99680 /* Preview Content */,
+				AB189F7E24665B7F00E99680 /* watering_notification.xcdatamodeld */,
 			);
 			path = watering_notification;
 			sourceTree = "<group>";
@@ -150,7 +159,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB189F8024665B7F00E99680 /* watering_notification.xcdatamodeld in Sources */,
+				AB189F9624665D4900E99680 /* WateringForm.swift in Sources */,
+				AB189F9424665D2100E99680 /* WateringDetail.swift in Sources */,
 				AB189F7B24665B7F00E99680 /* AppDelegate.swift in Sources */,
+				AB189F9224665C8E00E99680 /* IconImage.swift in Sources */,
 				AB189F8224665B7F00E99680 /* ContentView.swift in Sources */,
 				AB189F7D24665B7F00E99680 /* SceneDelegate.swift in Sources */,
 			);
@@ -220,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"watering_notification/Preview Content\"";
 				DEVELOPMENT_TEAM = 653KHWHRQ5;
 				ENABLE_PREVIEWS = YES;
@@ -297,10 +310,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reasonable-code.watering-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +323,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"watering_notification/Preview Content\"";
 				DEVELOPMENT_TEAM = 653KHWHRQ5;
 				ENABLE_PREVIEWS = YES;
@@ -317,10 +332,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.reasonable-code.watering-notification";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
