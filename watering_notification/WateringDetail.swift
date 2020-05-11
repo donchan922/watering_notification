@@ -132,6 +132,7 @@ struct WateringDetail: View {
         let content = UNMutableNotificationContent()
         content.title = "🌱水やりのお知らせ"
         content.body = "\(plantName)に水やりする時間です"
+        content.sound = UNNotificationSound.default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: now.distance(to: nextTime!), repeats: true)
         let request = UNNotificationRequest(identifier: watering.id!.uuidString, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
