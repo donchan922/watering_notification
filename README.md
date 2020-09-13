@@ -1,4 +1,4 @@
-# watering_notification
+# 水やりのお知らせ
 
 ## Screenshot
 ![screenshot_6.5_1.png](./screenshot/screenshot_6.5_1.png)
